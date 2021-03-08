@@ -11,7 +11,7 @@ import com.elhady.rickandmorty.databinding.ItemCharacterBinding
 import com.elhady.rickandmorty.data.entities.Characters
 
 /**
- * Created by islam elhady on 06-Apr-21.
+ * Created by islam elhady on 08-Mar-21.
  */
 class CharactersAdapter(private val listener: CharacterItemListener) : RecyclerView.Adapter<CharacterViewHolder>() {
 

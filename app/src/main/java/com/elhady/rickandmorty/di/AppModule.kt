@@ -22,8 +22,10 @@ import javax.inject.Singleton
  */
 @Module
 @InstallIn(ApplicationComponent::class)
-class AppModule {
+object AppModule {
 
+    @Singleton
+    @Provides
     fun provideRetrofit(gson: Gson): Retrofit = Retrofit.Builder()
         .baseUrl("https://rickandmortyapi.com/api/")
         .addConverterFactory(GsonConverterFactory.create(gson))

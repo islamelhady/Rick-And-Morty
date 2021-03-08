@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/characterFragment">
 
+    <fragment
+        android:id="@+id/characterFragment"
+        android:name="com.elhady.rickandmorty.ui.characters.CharacterFragment"
+        android:label="fragment_character"
+        tools:layout="@layout/fragment_character" >
+        <action
+            android:id="@+id/action_characterFragment_to_characterDetailFragment2"
+            app:destination="@id/characterDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterDetailFragment"
+        android:name="com.elhady.rickandmorty.ui.characterdetails.CharacterDetailFragment"
+        android:label="CharacterDetailFragment" />
 </navigation>
