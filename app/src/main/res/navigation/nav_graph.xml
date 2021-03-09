@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/characterFragment"
         android:name="com.elhady.rickandmorty.ui.characters.CharacterFragment"
-        android:label="fragment_character"
+        android:label="Characters"
         tools:layout="@layout/fragment_character" >
         <action
             android:id="@+id/action_characterFragment_to_characterDetailFragment2"
@@ -17,5 +17,5 @@
     <fragment
         android:id="@+id/characterDetailFragment"
         android:name="com.elhady.rickandmorty.ui.characterdetails.CharacterDetailFragment"
-        android:label="CharacterDetailFragment" />
+        android:label="Character Details" />
 </navigation>
