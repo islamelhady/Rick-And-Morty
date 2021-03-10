@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
-            android:text="@{characters.species - characters.status}"
+            android:text="@{characters.species}"
             app:layout_constraintStart_toEndOf="@+id/image"
             app:layout_constraintTop_toBottomOf="@+id/name"
             tools:text="species - status"/>

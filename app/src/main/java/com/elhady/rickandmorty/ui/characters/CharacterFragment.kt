@@ -12,7 +12,9 @@ import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.elhady.rickandmorty.R
+import com.elhady.rickandmorty.data.entities.Characters
 import com.elhady.rickandmorty.databinding.FragmentCharacterBinding
+import com.elhady.rickandmorty.ui.characters.CharactersViewModel.Companion.createArguments
 import com.elhady.rickandmorty.utils.Resource
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -42,7 +44,7 @@ class CharacterFragment : Fragment(), CharactersAdapter.CharacterItemListener  {
     }
 
     private fun setupRecyclerView() {
-        adapter = CharactersAdapter(this)
+        adapter = CharactersAdapter(arrayListOf(),this)
         binding.charactersRv.layoutManager = LinearLayoutManager(requireContext())
         binding.charactersRv.adapter = adapter
     }
@@ -63,11 +65,9 @@ class CharacterFragment : Fragment(), CharactersAdapter.CharacterItemListener  {
         })
     }
 
-    override fun onClickedCharacter(characterId: Int) {
-        findNavController().navigate(
-            R.id.action_characterFragment_to_characterDetailFragment2,
-            bundleOf("id" to characterId)
-        )
+    override fun onClickedCharacter(characters: Characters, position: Int) {
+        findNavController().navigate(R.id.action_characterFragment_to_characterDetailFragment2,
+            createArguments(characters))
     }
 
 
