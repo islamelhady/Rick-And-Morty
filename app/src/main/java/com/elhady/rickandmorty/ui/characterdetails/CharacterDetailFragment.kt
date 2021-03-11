@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.elhady.rickandmorty.data.entities.Characters
+import com.elhady.rickandmorty.data.model.Characters
 import com.elhady.rickandmorty.databinding.CharacterDetailFragmentBinding
 import dagger.hilt.android.AndroidEntryPoint
 

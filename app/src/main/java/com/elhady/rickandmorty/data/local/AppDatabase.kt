@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.elhady.rickandmorty.data.entities.Characters
+import com.elhady.rickandmorty.data.model.Characters
 
 @Database(entities = [Characters::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {

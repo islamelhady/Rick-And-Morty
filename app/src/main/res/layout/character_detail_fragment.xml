@@ -6,7 +6,7 @@
     <data>
         <variable
             name="characters"
-            type="com.elhady.rickandmorty.data.entities.Characters" />
+            type="com.elhady.rickandmorty.data.model.Characters" />
 
     </data>
 

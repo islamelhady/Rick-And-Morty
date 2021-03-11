@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.elhady.rickandmorty.databinding.ItemCharacterBinding
-import com.elhady.rickandmorty.data.entities.Characters
+import com.elhady.rickandmorty.data.model.Characters
 
 /**
  * Created by islam elhady on 08-Mar-21.

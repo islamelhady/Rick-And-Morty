@@ -6,13 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.os.bundleOf
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.elhady.rickandmorty.R
-import com.elhady.rickandmorty.data.entities.Characters
+import com.elhady.rickandmorty.data.model.Characters
 import com.elhady.rickandmorty.databinding.FragmentCharacterBinding
 import com.elhady.rickandmorty.ui.characters.CharactersViewModel.Companion.createArguments
 import com.elhady.rickandmorty.utils.Resource
