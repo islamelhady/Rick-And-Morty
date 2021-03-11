@@ -44,7 +44,6 @@ class CharacterFragment : Fragment(), CharactersAdapter.CharacterItemListener  {
 
     private fun setupRecyclerView() {
         adapter = CharactersAdapter(arrayListOf(),this)
-        binding.charactersRv.layoutManager = LinearLayoutManager(requireContext())
         binding.charactersRv.adapter = adapter
     }
 
