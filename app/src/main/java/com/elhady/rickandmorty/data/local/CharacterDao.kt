@@ -13,14 +13,14 @@ interface CharacterDao {
     @Query("SELECT * FROM characters")
     fun getAllCharacters() : LiveData<List<Characters>>
 
-    @Query("SELECT * FROM characters WHERE id = :id")
-    fun getCharacter(id: Int): LiveData<Characters>
+//    @Query("SELECT * FROM characters WHERE id = :id")
+//    fun getCharacter(id: Int): LiveData<Characters>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(characters: List<Characters>)
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(character: Characters)
+//    @Insert(onConflict = OnConflictStrategy.REPLACE)
+//    suspend fun insert(character: Characters)
 
 
 }
