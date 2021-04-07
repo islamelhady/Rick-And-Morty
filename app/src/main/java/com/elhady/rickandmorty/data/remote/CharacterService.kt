@@ -1,6 +1,6 @@
 package com.elhady.rickandmorty.data.remote
 
-import com.elhady.rickandmorty.data.entities.Character
+import com.elhady.rickandmorty.data.entities.Characters
 import com.elhady.rickandmorty.data.entities.CharacterList
 import retrofit2.Response
 import retrofit2.http.GET
@@ -14,5 +14,5 @@ interface CharacterService {
     suspend fun getAllCharacters(): Response<CharacterList>
 
     @GET("character/{id}")
-    suspend fun getCharacter(@Path("id") id: Int): Response<Character>
+    suspend fun getCharacter(@Path("id") id: Int): Response<Characters>
 }

@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
  * Created by islam elhady on 05-Mar-21.
  */
 @Entity(tableName = "characters")
-data class Character(
+data class Characters(
     @PrimaryKey
     val id: Int,
     val created: String,
